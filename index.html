@@ -330,7 +330,7 @@ function update(source) {
 			label = root.rtl ?  label + "..." : "..." + label;
 			d.tooltipText = root.rtl ? d.name.substring(pos + 1) : d.name.substring(0, pos);
 		}
-		(d.count > 1)
+		if (d.count > 1)
 		  label += " x" + d.count;		
 		return label;
 	  })
